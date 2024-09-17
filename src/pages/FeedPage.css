@@ -1,0 +1,213 @@
+.feed-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .profile-info {
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  .profile-name {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .profile-button {
+    background: #0073b1;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .profile-button:hover {
+    background: #005582;
+  }
+  
+  .feed-create-post {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .feed-create-post textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  .feed-create-post button {
+    background: #0073b1;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .feed-create-post button:hover {
+    background: #005582;
+  }
+  
+  .feed-posts {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .feed-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .posts-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .post-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .post-item:last-child {
+    border-bottom: none;
+  }
+  
+  .post-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .post-content {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .no-posts {
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+  }
+  .profile-button-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .profile-button {
+    background-color: #0073b1; /* LinkedIn blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-button:hover {
+    background-color: #005582; /* Darker LinkedIn blue */
+  }
+/* src/pages/FeedPage.css */
+.feed-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feed-create-post textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.feed-create-post input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.feed-create-post button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #0073b1;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.feed-posts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.post-item {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.post-item img {
+  width: 64%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 16%;
+}
+
+.post-item button {
+  margin-right: 10px;
+}
+
+.post-comments input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.post-comments ul {
+  list-style: none;
+  padding: 0;
+}
+  

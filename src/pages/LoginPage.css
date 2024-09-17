@@ -1,0 +1,226 @@
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f2ef;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f2ef;
+    }
+    
+    .login-box {
+      background-color: white;
+      padding: 40px;
+      width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    .login-header {
+      font-size: 24px;
+      font-weight: bold;
+      color: #0a66c2;
+      margin-bottom: 20px;
+    }
+    
+    .login-instructions {
+      margin-bottom: 10px;
+      color: #666;
+    }
+    
+    .login-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .otp-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .otp-input {
+      width: 40px;
+      padding: 10px;
+      margin-right: 10px;
+      font-size: 24px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0a66c2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    
+    .login-button:hover {
+      background-color: #004182;
+    }
+    
+    @media (max-width: 768px) {
+      .login-box {
+        width: 90%;
+        padding: 20px;
+      }
+    
+      .otp-input {
+        width: 30px;
+      }
+    }
+    .otp-input {
+      width: 40px;
+      padding: 10px;
+      margin-right: 10px;
+      font-size: 24px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+      
+    /* src/components/Logo.css */
+  .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .app-logo {
+      width: 200px; /* Adjust as needed */
+      height: auto;
+    }
+    
+    .feed-container {
+      width: 600px;
+      margin: 0 auto;
+    }
+    
+    .create-post {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    
+    button {
+      padding: 10px;
+      background-color: #0073b1;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #005582;
+    }
+    
+    .post {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .comments-section {
+      margin-top: 10px;
+    }
+    
+    input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li {
+      background-color: #f1f1f1;
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .profile-page-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    
+    .profile-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .profile-image img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    
+    .profile-details {
+      margin-left: 20px;
+    }
+    
+    .profile-title {
+      font-size: 18px;
+      color: #555;
+    }
+    
+    .profile-location {
+      font-size: 14px;
+      color: #888;
+    }
+    
+    .profile-bio {
+      margin-bottom: 20px;
+    }
+    
+    .profile-posts {
+      margin-top: 20px;
+    }
+    
+    .posts-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .post-item {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+    
+    .error-message {
+      color: red;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+      
