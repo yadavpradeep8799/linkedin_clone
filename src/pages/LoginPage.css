@@ -9,8 +9,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      /* height: 100vh; */
       background-color: #f3f2ef;
+      margin: 40px;
     }
     
     .login-box {
@@ -119,7 +120,20 @@
     }
     
     textarea {
-      width: 100%;
+      width: 95%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .textaArea{
+      width: 878px;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .textaArea2{
+      width: 835px;
       padding: 10px;
       font-size: 16px;
       margin-bottom: 10px;

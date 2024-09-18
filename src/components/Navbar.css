@@ -6,16 +6,21 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   padding: 10px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Default behavior */
   align-items: center;
+  display: block;
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Default behavior */
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.navbar-logo {
+  margin-right: auto; /* Ensure the logo stays on the left */
 }
 
 .navbar-logo a {
@@ -23,6 +28,7 @@
   font-weight: bold;
   color: #0073b1; /* LinkedIn blue */
   text-decoration: none;
+  margin-left: 57px;
 }
 
 .navbar-search input {
@@ -50,6 +56,7 @@
   align-items: center;
   position: relative;
   cursor: pointer;
+  margin-right: 90px;
 }
 
 .navbar-profile-pic {
@@ -105,6 +112,7 @@
   color: #0073b1;
 }
 
-.searCh{
+/* Additional class */
+.searCh {
   margin-bottom: -13px;
 }

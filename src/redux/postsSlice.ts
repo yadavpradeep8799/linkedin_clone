@@ -1,9 +1,10 @@
-// src/redux/postsSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import imagePost from '../assets/pp.jpg'; // Correctly import the image for use in the initial post
+import imagePost from '../assets/pp.jpg';
 
 interface Post {
   id: number;
+  userName: string;  // New field for user's name
+  userTitle: string; // New field for user's job title
   content: string;
   image: string;
   tags: string;
@@ -19,8 +20,10 @@ const initialState: PostState = {
   posts: [
     {
       id: 1,
+      userName: 'Pradeep Yadav',
+      userTitle: 'Frontend Developer @ Dotvik Solutions',
       content: 'This is my first post!',
-      image: imagePost, // Use the actual imported image instead of a string
+      image: imagePost, // corrected to use the imported image
       tags: '#first #post',
       likes: 10,
       comments: ['Great post!', 'Congrats on your first post!'],
@@ -35,8 +38,10 @@ const postsSlice = createSlice({
     addPost: (state, action: PayloadAction<{ content: string; image: string; tags: string }>) => {
       const newPost: Post = {
         id: state.posts.length + 1,
+        userName: 'Pradeep Yadav', // Default or dynamic user name
+        userTitle: 'Frontend Developer @ Dotvik Solutions', // Default or dynamic user title
         content: action.payload.content,
-        image: action.payload.image || imagePost, // Use the provided image or default to `imagePost`
+        image: action.payload.image,
         tags: action.payload.tags,
         likes: 0,
         comments: [],

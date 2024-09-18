@@ -113,6 +113,7 @@ const ProfilePage: React.FC = () => {
       <section className="create-post">
         <h2>Create New Post</h2>
         <textarea
+          className='textaArea'
           value={newPost}
           onChange={(e) => setNewPost(e.target.value)}
           placeholder="What's on your mind?"
@@ -152,6 +153,7 @@ const ProfilePage: React.FC = () => {
                         <p key={index} className="comment">{comment}</p>
                       ))}
                       <textarea
+                        className='textaArea2'
                         value={newComment || ''}
                         onChange={(e) => setNewComment(e.target.value)}
                         placeholder="Add a comment"

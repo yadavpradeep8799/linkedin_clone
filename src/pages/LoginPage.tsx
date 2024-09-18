@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { login } from '../redux/userSlice'; // Import the action
 import Logo from '../components/Logo';
 import './LoginPage.css';
+import NavbarLogin from '../components/navbarLogin';
 
 const LoginPage: React.FC = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -41,6 +42,8 @@ const LoginPage: React.FC = () => {
   };
 
   return (
+    <>
+    <NavbarLogin/>
     <div className="login-container">
       <div className="login-box">
         <Logo />
@@ -75,6 +78,7 @@ const LoginPage: React.FC = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

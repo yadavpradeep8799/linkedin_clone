@@ -8,6 +8,7 @@ import LoginPage from './pages/LoginPage';
 import FeedPage from './pages/FeedPage';
 import ProfilePage from './pages/ProfilePage';
 import Navbar from './components/Navbar';
+import MessagePage from './pages/MessagePage';
 
 function App() {
   // Access the authentication state from Redux
@@ -21,6 +22,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/feed" element={isAuthenticated ? <FeedPage /> : <Navigate to="/login" />} />
         <Route path="/profile" element={isAuthenticated ? <ProfilePage /> : <Navigate to="/login" />} />
+        <Route path="/messages" element={isAuthenticated ? <MessagePage /> : <Navigate to="/login" />} />
         {/* Default route to redirect to /login */}
         <Route path="/" element={<Navigate to="/login" />} />
       </Routes>
