@@ -7,7 +7,7 @@ import './ProfilePage.css';
 
 // Import images
 import defaultProfilePicture from '../assets/pp.jpg'; // Path to profile picture
-import coverImage from '../assets/logo.png'; 
+import coverImage from '../assets/cover.jpg'; // Add a LinkedIn-style cover image
 
 interface Profile {
   name: string;
@@ -17,6 +17,7 @@ interface Profile {
   bio?: string;
 }
 
+// Simulating fetching profile data
 const fetchProfileData = (): Promise<Profile> => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -80,22 +81,19 @@ const ProfilePage: React.FC = () => {
   };
 
   if (!profile) {
-    return <div>No profile available.</div>;
+    return <div>Loading...</div>;
   }
 
   return (
     <div className="profile-container">
+      {/* Profile Header */}
       <header className="profile-header">
-        <div className="profile-cover">
-          {/* <img src={coverImage} alt="Cover" className="cover-image" /> */}
+        <div className="cover-photo">
+          <img src={coverImage} alt="Cover" className="cover-image" />
         </div>
         <div className="profile-info">
-          <div className="profile-image">
-            <img
-              src={profile.profilePicture}
-              alt={profile.name}
-              className="profile-picture"
-            />
+          <div className="profile-photo">
+            <img src={profile.profilePicture} alt={profile.name} className="profile-picture" />
           </div>
           <div className="profile-details">
             <h1>{profile.name}</h1>
@@ -104,21 +102,23 @@ const ProfilePage: React.FC = () => {
           </div>
         </div>
       </header>
-      <section className="profile-bio">
+
+      {/* About Section */}
+      <section className="profile-about">
         <h2>About</h2>
         <p>{profile.bio ?? 'No bio available'}</p>
       </section>
 
-      {/* Create New Post */}
+      {/* Create New Post Section */}
       <section className="create-post">
         <h2>Create New Post</h2>
         <textarea
-          className='textaArea'
           value={newPost}
           onChange={(e) => setNewPost(e.target.value)}
           placeholder="What's on your mind?"
+          className="create-post-textarea"
         />
-        <button onClick={handleCreatePost}>Post</button>
+        <button onClick={handleCreatePost} className="create-post-button">Post</button>
       </section>
 
       {/* Your Posts Section */}
@@ -129,7 +129,7 @@ const ProfilePage: React.FC = () => {
             <li>No posts to display.</li>
           ) : (
             posts.map((post) => (
-              <li key={post.id} className="post-item">
+              <li key={post.id} className="post-item ">
                 {editingPostId === post.id ? (
                   <>
                     <textarea
@@ -140,12 +140,11 @@ const ProfilePage: React.FC = () => {
                   </>
                 ) : (
                   <>
-                    {post.image && <img src={post.image} alt="Post visual" className="post-image" />}
+                    {post.image && <img src={post.image} alt="Post" className="post-image profileImgE" />}
                     <p>{post.content}</p>
                     <div className="post-actions">
                       <button onClick={() => handleLikePost(post.id)}>Like ({post.likes})</button>
                       <button onClick={() => handleEditPost(post.id, post.content)}>Edit</button>
-                      <button onClick={() => console.log('Sharing post')}>Share</button>
                     </div>
                     <div className="post-comments">
                       <h3>Comments:</h3>
@@ -153,10 +152,10 @@ const ProfilePage: React.FC = () => {
                         <p key={index} className="comment">{comment}</p>
                       ))}
                       <textarea
-                        className='textaArea2'
                         value={newComment || ''}
                         onChange={(e) => setNewComment(e.target.value)}
                         placeholder="Add a comment"
+                        className="comment-textarea"
                       />
                       <button onClick={() => handleAddComment(post.id)}>Comment</button>
                     </div>

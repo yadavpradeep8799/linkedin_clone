@@ -52,7 +52,7 @@ const LoginPage: React.FC = () => {
           <>
             <p className="login-instructions">Enter your phone number to log in.</p>
             <input
-              type="text"
+              type="number"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
               placeholder="Phone Number"

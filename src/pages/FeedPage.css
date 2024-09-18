@@ -25,7 +25,7 @@
 }
 
 .profile-info {
-  margin-left: 20px; /* Increased margin */
+  margin-left:-320px; /* Increased margin */
   cursor: pointer;
 }
 
@@ -109,8 +109,16 @@
   height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
+
 }
 
+.profileImgE {
+  width: 60% !important;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-left: 165px !important;
+}
 .post-content {
   font-size: 16px;
   color: #333;
@@ -314,4 +322,14 @@
 .feedWidth{
   width: 78%;
   margin-left: 8%;
+}
+
+.paragRaph{
+  margin-top: -20px;
+  font-size: small;
+  color: grey;
+}
+
+.heading4{
+margin-top: -9px;
 }

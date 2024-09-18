@@ -96,8 +96,8 @@ const FeedPage: React.FC = () => {
               <div className="post-header">
                 <img src={imgProfilee} alt="User" className="post-user-pic" />
                 <div className="post-user-info">
-                  <h4>{post.userName}</h4>
-                  <p>{post.userTitle}</p>
+                  <h4 className='heading4'>{post.userName}</h4>
+                  <p className='paragRaph'>{post.userTitle}</p>
                 </div>
               </div>
               {post.image && <img src={post.image} alt="Post visual" className="post-image" />}

@@ -3,6 +3,7 @@
   display: flex;
   margin-left: 126px;
   width: 78%;
+  margin-top: 2%;
 }
 
 .sidebar {
@@ -59,7 +60,7 @@
 }
 
 .message-item.selected {
-  background-color: #0073b1; /* LinkedIn Blue */
+  background-color: #d0dadf; /* LinkedIn Blue */
   color: white;
 }
 

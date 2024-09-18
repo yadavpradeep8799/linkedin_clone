@@ -9,6 +9,7 @@ import FeedPage from './pages/FeedPage';
 import ProfilePage from './pages/ProfilePage';
 import Navbar from './components/Navbar';
 import MessagePage from './pages/MessagePage';
+import NotificationPage from './pages/NotificationPage';
 
 function App() {
   // Access the authentication state from Redux
@@ -23,6 +24,7 @@ function App() {
         <Route path="/feed" element={isAuthenticated ? <FeedPage /> : <Navigate to="/login" />} />
         <Route path="/profile" element={isAuthenticated ? <ProfilePage /> : <Navigate to="/login" />} />
         <Route path="/messages" element={isAuthenticated ? <MessagePage /> : <Navigate to="/login" />} />
+        <Route path="/notifications" element={isAuthenticated ? <NotificationPage /> : <Navigate to="/login" />} />
         {/* Default route to redirect to /login */}
         <Route path="/" element={<Navigate to="/login" />} />
       </Routes>
